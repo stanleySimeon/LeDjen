@@ -28,9 +28,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Le Djen] <a name="about-project"></a>
+# 📖 Le Djen <a name="about-project"></a>
 
-**[Le Djen]** is a responsive website, which can help users to explore his article, reflections, and others from different devices.
+**Le Djen** is a responsive website, which can help users to explore his article, reflections, and others from different devices.
 
 ## 🛠 Built With <a name="built-with"></a>
 
