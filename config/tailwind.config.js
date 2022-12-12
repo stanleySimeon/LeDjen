@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
+  mode: 'jit',
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
@@ -8,7 +9,14 @@ module.exports = {
     './app/views/**/*.{erb,haml,html,slim}'
   ],
   theme: {
+    fontFamily: {
+      sans: ['Poppins', ...defaultTheme.fontFamily.sans],
+      tangerine: ['Tangerine', 'cursive'],
+    },
     extend: {
+      backgroundImage: {
+        'background': "url('/img/background.AVIF')",
+      },
       keyframes: {
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },
@@ -28,7 +36,9 @@ module.exports = {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        navbar: '#787065',
+        primary: '#E0DED1',
+        secondary: '#787065',
+        title: '#4E4943',
         logo: '#3DB6D1',
       },
       container: {
@@ -37,8 +47,8 @@ module.exports = {
           sm: '640px',
           md: '768px',
           lg: '1024px',
-          xl: '1280px',
-          '2xl': '1536px',
+          xl: '1440px',
+          '2xl': '2560px',
         },
         padding: {
           DEFAULT: '1rem',

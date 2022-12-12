@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # devise_for :users
-  resources :likes
-  resources :posts
-  resources :comments
-  root "posts#index"
+  root 'home#index'
+  resources :comments do
+    resources :comments, only: [:create, :show, :update, :destroy]
+  end
 end

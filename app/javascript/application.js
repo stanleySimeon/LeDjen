@@ -6,7 +6,9 @@ import "controllers"
 const hamburger = document.querySelector(".hamburger");
 const close = document.querySelector(".close-menu");
 const link = document.querySelectorAll(".link");
+const btn = document.querySelectorAll(".btn");
 const menu = document.querySelector(".menu");
+const nav_background = document.getElementById("navigation-bar");
 
 /**
  * This is a forEach loop that is looping through
@@ -35,4 +37,26 @@ hamburger.addEventListener("click", () => {
 close.addEventListener("click", () => {
   menu.classList.add("hidden");
   close.classList.add("hidden");
+});
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    nav_background.classList.add("bg-secondary");
+    nav_background.classList.add("shadow");
+  } else {
+    nav_background.classList.remove("bg-secondary");
+    nav_background.classList.remove("shadow");
+  }
+});
+
+btn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (window.scrollY > 100) {
+      nav_background.classList.add("bg-secondary");
+      nav_background.classList.add("shadow");
+    } else {
+      nav_background.classList.remove("bg-secondary");
+      nav_background.classList.remove("shadow");
+    }
+  });
 });

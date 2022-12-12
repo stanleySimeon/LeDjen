@@ -20,3 +20,4 @@ module LeDjen
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
+# Webpacker::Compiler.env["TAILWIND_MODE"] = "build"

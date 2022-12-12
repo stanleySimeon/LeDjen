@@ -1,21 +1,21 @@
-<div class="flex justify-between items-center px-4 md:px-16 lg:px-32 py-2 md:py-3 lg:py-5 sticky top-0 left-0 z-50 bg-navbar">
+<div class="flex justify-between items-center px-4 md:px-16 lg:px-32 2xl:px-48 py-2 md:py-3 lg:py-5 sticky top-0 left-0 z-50" id="navigation-bar">
   <div class="">
-    <%= link_to root_path do %>
+    <%= link_to root_path, :class => "link" do %>
       <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-white whitespace-nowrap"><span class="text-logo">L</span>e <span class="text-logo">D</span>jen</h1>
     <% end %>
   </div>
   <div class="flex justify-between items-center">
     <div class="menu hidden md:flex">
-      <div class=" w-full h-screen md:h-auto md:w-auto flex flex-col absolute md:relative top-0 left-0 z-30 bg-navbar md:flex-row gap-4 md:gap-6 lg:gap-8 justify-center md:justify-between items-center">
+      <div class="w-full h-screen md:h-auto md:w-auto flex flex-col md:flex-row absolute md:relative top-0 left-0 z-30 bg-secondary md:bg-transparent gap-4 md:gap-6 lg:gap-8 justify-center md:justify-between items-center">
         <div class="close-menu absolute top-2 right-4 cursor-pointer hidden">
           <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </div>
-        <%= link_to "Acceuil", root_path, class: "link text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
-        <%= link_to "A propos", root_path, class: "link text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
-        <%= link_to "Mon blog", root_path, class: "link text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
-        <%= link_to "Contact", root_path, class: "link text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
+        <%= link_to "Acceuil", root_path, class: "text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
+        <%= link_to "A propos", "#about", class: "btn text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
+        <%= link_to "Mon blog", "#", class: "btn text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
+        <%= link_to "Contact", "#", class: "btn text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
       </div>
     </div>
     <div class="menu-toggle md:hidden cursor-pointer">

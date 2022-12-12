@@ -3,6 +3,7 @@
   <head>
     <title>Le Djen</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
@@ -11,7 +12,7 @@
   </head>
   <body class="bg-cover bg-fixed bg-#E0DED1" background="">
     <main class="container-fluid px-0">
-      <%= render "layouts/navbar" %>
+      <%= render "home/index" %>
       <% if alert || notice %>
         <div class="text-midnight bg-transparent flex justify-center items-center">
           <span class="w-auto px-4 h-12 flex justify-center mt-2 rounded items-center bg-white">
@@ -20,6 +21,8 @@
           </span>
         </div>
       <% end %>
+      <%= render "home/about" %>
+      <%= render "home/blog" %>
       <%= yield %>
     </main>
   </body>
