@@ -1,8 +1,11 @@
-<div id="about" class="px-4 md:px-16 lg:px-32 2xl:px-48">
+<div id="about" class="px-4 md:px-16 lg:px-32 2xl:px-48 border-b">
   <div class="flex flex-col md:flex-row gap-4 md:gap-8">
-    <div class="w-full md:w-1/2 py-4 md:py-8">
-      <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-logo font-['tangerine']">About Me</h1>
-      <p class="text-lg md:text-xl lg:text-2xl mt-2 md:mt-4 text-title">
+    <div class="w-full md:w-1/2 md:flex justify-center">
+      <%= image_tag "about.AVIF", class: "w-full md:block hidden" %>
+    </div>
+    <div class="w-full md:w-1/2 py-4 md:py-8 flex flex-col justify-center">
+      <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold text-title">A propos<span class="text-4xl md:text-6xl lg:text-8xl font-bold text-logo">.</span></h1>
+      <p class="text-lg md:text-xl lg:text-2xl mt-2 md:mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl,
           sit amet aliquam nisl nisl sit amet nisl.
@@ -10,9 +13,23 @@
           Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl,
           sit amet aliquam nisl nisl sit amet nisl.
       </p>
-    </div>
-    <div class="w-full md:w-1/2">
-      <%= image_tag "Post.gif", class: "w-full" %>
+      <span class="social-link flex gap-4 mt-4">
+        <%= link_to "https://www.facebook.com/djenson.jean", target: "_blank" do %>
+          <%= image_tag "facebook.svg", class: "w-6 h-6" %>
+        <% end %>
+        <%= link_to "https://twitter.com/djensonjean", target: "_blank" do %>
+          <%= image_tag "twitter.svg", class: "w-6 h-6" %>
+        <% end %>
+        <%= link_to "https://www.instagram.com/djensonjean/", target: "_blank" do %>
+          <%= image_tag "instagram.svg", class: "w-6 h-6" %>
+        <% end %>
+        <%= link_to "https://www.linkedin.com/in/djenson-jean-1b1b1b1b1/", target: "_blank" do %>
+          <%= image_tag "linkedin.svg", class: "w-6 h-6" %>
+        <% end %>
+        <%= link_to "https://www.wa.me/50938700000", target: "_blank" do %>
+          <%= image_tag "whatsapp.svg", class: "w-6 h-6" %>
+        <% end %>
+      </span>
     </div>
   </div>
 </div>

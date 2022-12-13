@@ -1,6 +1,7 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
+import "./data.js"
 
 /* Selecting the hamburger and close elements from the DOM. */
 const hamburger = document.querySelector(".hamburger");
@@ -51,6 +52,7 @@ window.addEventListener("scroll", () => {
 
 btn.forEach((btn) => {
   btn.addEventListener("click", () => {
+    menu.classList.add("hidden");
     if (window.scrollY > 100) {
       nav_background.classList.add("bg-secondary");
       nav_background.classList.add("shadow");

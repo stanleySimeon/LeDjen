@@ -1,6 +1,6 @@
 <div class="flex justify-between items-center px-4 md:px-16 lg:px-32 2xl:px-48 py-2 md:py-3 lg:py-5 sticky top-0 left-0 z-50" id="navigation-bar">
   <div class="">
-    <%= link_to root_path, :class => "link" do %>
+    <%= link_to "#home", :class => "link" do %>
       <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-white whitespace-nowrap"><span class="text-logo">L</span>e <span class="text-logo">D</span>jen</h1>
     <% end %>
   </div>
@@ -12,10 +12,10 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </div>
-        <%= link_to "Acceuil", root_path, class: "text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
-        <%= link_to "A propos", "#about", class: "btn text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
-        <%= link_to "Mon blog", "#", class: "btn text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
-        <%= link_to "Contact", "#", class: "btn text-white text-lg lg:text-xl font-light px-4 py-2 hover:bg-white hover:text-black" %>
+        <%= link_to "Acceuil", "#home", class: "btn link text-white text-lg lg:text-xl font-light px-2 py-1 hover:bg-white hover:text-black" %>
+        <%= link_to "A propos", "#about", class: "btn text-white text-lg lg:text-xl font-light px-2 py-1 hover:bg-white hover:text-black" %>
+        <%= link_to "Mon blog", "#blog", class: "btn text-white text-lg lg:text-xl font-light px-2 py-1 hover:bg-white hover:text-black" %>
+        <%= link_to "Contact", "#", class: "btn text-white text-lg lg:text-xl font-light px-2 py-1 hover:bg-white hover:text-black" %>
       </div>
     </div>
     <div class="menu-toggle md:hidden cursor-pointer">

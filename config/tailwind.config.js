@@ -12,6 +12,7 @@ module.exports = {
     fontFamily: {
       sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       tangerine: ['Tangerine', 'cursive'],
+      ballet: ['Ballet', 'cursive'],
     },
     extend: {
       backgroundImage: {
@@ -32,14 +33,12 @@ module.exports = {
       animation: {
         'waving-hand': 'wave 2s linear infinite',
       },
-      fontFamily: {
-        sans: ['Poppins', ...defaultTheme.fontFamily.sans],
-      },
       colors: {
         primary: '#E0DED1',
         secondary: '#787065',
         title: '#4E4943',
         logo: '#3DB6D1',
+        greenDark: '#287384',
       },
       container: {
         center: true,
