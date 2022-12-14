@@ -1,17 +1,17 @@
 require 'rails_helper'
 
-RSpec.describe "posts/show", type: :view do
+RSpec.describe 'posts/show', type: :view do
   before(:each) do
     assign(:post, Post.create!(
-      title: "Title",
-      body: "MyText",
-      comments_counter: "",
-      likes_counter: "",
-      author_id: ""
-    ))
+                    title: 'Title',
+                    body: 'MyText',
+                    comments_counter: '',
+                    likes_counter: '',
+                    author_id: ''
+                  ))
   end
 
-  it "renders attributes in <p>" do
+  it 'renders attributes in <p>' do
     render
     expect(rendered).to match(/Title/)
     expect(rendered).to match(/MyText/)
