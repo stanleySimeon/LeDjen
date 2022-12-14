@@ -1,17 +1,17 @@
 <div id="home" class="container-fluid h-screen bg-cover bg-no-repeat" id="home" style="background-image: url(<%= image_path("background.AVIF") %>)">
   <%= render "layouts/navbar" %>
-  <div class="md:w-10/12 px-4 md:px-16 lg:px-32 2xl:px-48 py-16 lg:py-12 md:gap-3 flex flex-col mt-10 md:mt-20 lg:mt-18">
-    <h1 class="text-lg md:text-xl lg:text-2xl text-white">Hi, I'm</h1>
+  <div id="home" class="md:w-10/12 h-5/6 px-4 md:px-16 lg:px-32 2xl:px-48 md:gap-3 flex flex-col justify-center align-middle">
+    <h1 class="text-xl lg:text-4xl 2xl:6xl text-white">Hi, I'm</h1>
     <h1 class="text-4xl md:text-6xl lg:text-8xl whitespace-nowrap font-bold text-primary">Djenson Jean</h1>
-    <p class="text-lg md:text-xl lg:text-2xl mt-2 md:mt-4 text-white">I'm a <span class="text-logo">Lorem Ipsum Dolor Sit</span></p>
-    <p class="description text-lg md:text-xl lg:text-2xl text-white">
+    <p class="text-lg lg:text-xl xl:text-2xl mt-2 md:mt-4 text-white">I'm a <span class="text-logo">Lorem Ipsum Dolor Sit</span></p>
+    <p class="description text-lg lg:text-xl xl:text-2xl text-white">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Sed euismod, nunc ut aliquam tincidunt, nunc nisl aliquam nisl,
       sit amet aliquam nisl nisl sit amet nisl.
     </p>
     <span class="mt-4 flex gap-4">
       <%= link_to "Contact", "#", class: "link text-white text-lg lg:text-xl font-light px-6 py-2 bg-logo hover:text-logo hover:bg-white" %>
-      <%= link_to "Get Started", "#", class: "link text-white text-lg lg:text-xl font-light px-4 py-2 hover:text-logo hover:border-white border border-logo" %>
+      <%= link_to "Get Started", "#blog", class: "link text-white text-lg lg:text-xl font-light px-4 py-2 hover:text-logo hover:border-white border border-logo" %>
     </span>
   </div>
 </div>
