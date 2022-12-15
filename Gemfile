@@ -7,6 +7,9 @@ ruby '3.1.2'
 gem 'devise'
 gem 'rails', '~> 7.0.4'
 
+gem 'mailcatcher' # gem 'mailcatcher', '~> 0.8.1'
+gem 'mail_form', '>= 1.3.0'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 

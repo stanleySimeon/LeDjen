@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :comments do
     resources :comments, only: [:create, :show, :update, :destroy]
   end
+  resources :contacts, only: [:new, :create]
 end

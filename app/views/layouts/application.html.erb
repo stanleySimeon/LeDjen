@@ -25,6 +25,12 @@
       <%= render "home/blog" %>
       <%= render "home/contact" %>
       <%= yield %>
+      <div class="container">
+  <br>
+  <% flash.each do |key, message| %>
+    <p class="alert alert-<%= key %>"><%= message %></p>
+  <% end %>
+</div>
     </main>
   </body>
 </html>
