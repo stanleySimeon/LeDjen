@@ -5,4 +5,5 @@ Rails.application.routes.draw do
     resources :comments, only: [:create, :show, :update, :destroy]
   end
   resources :contacts, only: [:new, :create]
+  get '/contacts', to: 'contacts#new'
 end

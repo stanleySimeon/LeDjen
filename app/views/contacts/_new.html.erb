@@ -1,17 +1,22 @@
-<div class="">
-  <h1 class="text-4xl md:text-8xl lg:text-10x 2xl:text-12xl font-bold text-white">Contactez-moi</h1>
-  <%= form_for Contact.new(), url: contacts_path, html: { class: "contact-form" } do |f| %>
-    <div class="">
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
-
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
-
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area",
-            placeholder: "Send me a message"%></br>
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
-    </div>
+<div class="w-1/2">
+  <%= form_for Contact.new(), url: contacts_path, local: true, data: { turbo: false }, method: :post, html: { class: "contact-form" } do |f| %>
+    <span class="flex flex-col gap-4">
+      <span>
+      <%= f.label :name, class: "text-white text-xl" %>
+      <%= f.text_field  :name, required: true, class: "w-full text-lg border-blue-50 outline-none rounded-sm mt-2", placeholder: "Votre nom complet" %>
+      </span>
+      <span>
+        <%= f.label :email, class: "text-white text-xl" %>
+        <%= f.text_field :email, required: true, class: "w-full text-lg border-blue-50 outline-none rounded-sm mt-2", placeholder: "Votre addresse email" %>
+      </span>
+      <span>
+        <%= f.label :message, class: "text-white text-xl" %>
+        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "w-full text-lg border-blue-50 outline-none h-26 rounded-sm mt-2",
+            placeholder: "Envoyer un message..."%>
+      </span>
+      <span class="flex justify-center md:justify-end">
+        <%= f.submit "Envoyer", type: "submit", class: "w-full md:w-32 text-xl text-white bg-logo px-2 md:px-4 py-2 border-blue-50 outline-none rounded-sm hover:text-logo hover:bg-white cursor-pointer" %>
+      </span>
+    </span>
   <% end %>
 </div>
