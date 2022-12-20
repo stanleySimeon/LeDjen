@@ -1,4 +1,4 @@
-<div class="w-1/2">
+<div class="w-full md:w-3/4 ">
   <%= form_for Contact.new(), url: contacts_path, local: true, data: { turbo: false }, method: :post, html: { class: "contact-form" } do |f| %>
     <span class="flex flex-col gap-4">
       <span>
@@ -11,11 +11,11 @@
       </span>
       <span>
         <%= f.label :message, class: "text-white text-xl" %>
-        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "w-full text-lg border-blue-50 outline-none h-26 rounded-sm mt-2",
+        <%= f.text_area :message, rows: 5, cols: 30, required: true, class: "w-full text-lg border-blue-50 outline-none h-18 rounded-sm mt-2",
             placeholder: "Envoyer un message..."%>
       </span>
       <span class="flex justify-center md:justify-end">
-        <%= f.submit "Envoyer", type: "submit", class: "w-full md:w-32 text-xl text-white bg-logo px-2 md:px-4 py-2 border-blue-50 outline-none rounded-sm hover:text-logo hover:bg-white cursor-pointer" %>
+        <%= f.submit "Envoyer", type: "submit", class: "w-full md:w-32 text-xl text-white bg-gradient-to-r from-blue-500 to-logo px-2 md:px-4 py-2 border-blue-50 outline-none rounded-sm cursor-pointer" %>
       </span>
     </span>
   <% end %>
