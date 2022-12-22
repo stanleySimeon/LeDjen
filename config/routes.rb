@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  # devise_for :users
+  devise_for :users
   root 'home#index'
-  resources :comments do
-    resources :comments, only: [:create, :show, :update, :destroy]
+  resources :users, only: [:index, :show] do
+    resources :posts, only: [:index, :show, :new, :create] do
+      resources :comments, only: [:new, :create]
+      resources :likes, only: [:new, :create]
+    end
   end
   resources :contacts, only: [:new, :create]
   get '/contacts', to: 'contacts#new'
