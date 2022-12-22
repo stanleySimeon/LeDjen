@@ -74,5 +74,5 @@ end
 
 gem 'ruby-lsp', '~> 0.2.3', group: :development
 
+gem 'mail_form', '>= 1.3.0'
 gem 'tailwindcss-rails', '~> 2.0'
-gem "mail_form", ">= 1.3.0"
